@@ -34,6 +34,17 @@ public class TarefaService {
 		List<Tarefa> buscarPorNaoFinalizado = this.tarefaRepository.findAllNaoClosed();
 		return buscarPorNaoFinalizado;
 	}
+
+	public void delete(Integer id) {
+		this.tarefaRepository.deleteById(id);
+	}
+
+	public Tarefa create(Tarefa obj) {
+		obj.setId(null);
+		return tarefaRepository.save(obj);
+	}
+
+	
 	
 	
 }
