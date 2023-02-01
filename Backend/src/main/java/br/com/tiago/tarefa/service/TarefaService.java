@@ -44,6 +44,15 @@ public class TarefaService {
 		return tarefaRepository.save(obj);
 	}
 
+	public Tarefa atualizar(Integer id, Tarefa obj) {
+		Tarefa newObj = buscarPorId(id);
+		newObj.setTitulo(obj.getTitulo());
+		newObj.setDescricao(obj.getDescricao());
+		newObj.setDataFinalizacao(obj.getDataFinalizacao());
+		newObj.setFinalizado(obj.getFinalizado());
+		return tarefaRepository.save(newObj);
+	}
+
 	
 	
 	
