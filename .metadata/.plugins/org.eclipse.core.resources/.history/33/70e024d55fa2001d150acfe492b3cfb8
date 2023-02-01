@@ -12,7 +12,4 @@ public interface TarefaRepository extends JpaRepository<Tarefa, Integer> {
 	@Query("SELECT obj FROM Tarefa obj WHERE obj.finalizado = true ORDER BY obj.dataFinalizacao")
 	List<Tarefa> findAllClosed();
 
-	@Query("SELECT obj FROM Tarefa obj WHERE obj.finalizado = false ORDER BY obj.dataFinalizacao")
-	List<Tarefa> findAllNaoClosed();
-
 }

@@ -32,7 +32,7 @@ public class TarefaService {
 
 	public List<Tarefa> buscarTodosNaoClosed() {
 		List<Tarefa> buscarPorNaoFinalizado = this.tarefaRepository.findAllNaoClosed();
-		return buscarPorNaoFinalizado;
+		return null;
 	}
 	
 	

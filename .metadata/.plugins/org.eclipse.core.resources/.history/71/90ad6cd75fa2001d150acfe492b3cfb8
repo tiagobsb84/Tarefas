@@ -29,11 +29,6 @@ public class TarefaService {
 		List<Tarefa> buscarPorClose = this.tarefaRepository.findAllClosed();
 		return buscarPorClose;
 	}
-
-	public List<Tarefa> buscarTodosNaoClosed() {
-		List<Tarefa> buscarPorNaoFinalizado = this.tarefaRepository.findAllNaoClosed();
-		return buscarPorNaoFinalizado;
-	}
 	
 	
 }

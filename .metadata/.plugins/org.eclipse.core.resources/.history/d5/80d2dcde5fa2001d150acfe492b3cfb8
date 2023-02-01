@@ -36,10 +36,4 @@ public class TarefaController {
 		List<Tarefa> listaFinalizados = tarefaService.buscarTodosClosed();
 		return ResponseEntity.ok().body(listaFinalizados);
 	}
-	
-	@GetMapping(value = "/open")
-	public ResponseEntity<List<Tarefa>> buscarTodosNaoFinalizados() {
-		List<Tarefa> listaNaoFinalizados = tarefaService.buscarTodosNaoClosed();
-		return ResponseEntity.ok().body(listaNaoFinalizados);
-	}
 }

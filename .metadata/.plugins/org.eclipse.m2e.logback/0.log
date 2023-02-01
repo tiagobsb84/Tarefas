@@ -62,3 +62,15 @@
 2023-02-01 15:10:14,575 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-02-01 15:10:14,581 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
 2023-02-01 15:10:44,679 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-02-01 15:10:44,692 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-01 15:10:44,697 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
+2023-02-01 15:40:00,247 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-02-01 15:40:00,265 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-01 15:40:00,270 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
+2023-02-01 15:40:04,028 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-02-01 15:40:04,043 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-01 15:40:04,053 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
+2023-02-01 15:40:12,488 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
+2023-02-01 15:40:12,499 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-01 15:40:12,504 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
+2023-02-01 15:40:16,513 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
