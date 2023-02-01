@@ -1,6 +1,7 @@
 package br.com.tiago.tarefa.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,4 +19,16 @@ public class TarefaService {
 		List<Tarefa> listaTodos = tarefaRepository.findAll();
 		return listaTodos;
 	}
+
+	public Tarefa buscarPorId(Integer id) {
+		Optional<Tarefa> findById = this.tarefaRepository.findById(id);
+		return findById.orElse(null);
+	}
+
+	public List<Tarefa> buscarTodosClosed() {
+		List<Tarefa> buscarPorClose = this.tarefaRepository.findAllClosed();
+		return buscarPorClose;
+	}
+	
+	
 }

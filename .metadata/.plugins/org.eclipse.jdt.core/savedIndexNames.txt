@@ -1,8 +1,8 @@
 INDEX VERSION 1.131+C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\.metadata\.plugins\org.eclipse.jdt.core
 1221875014.index
-1372034770.index
-2199582840.index
 2141184163.index
+2199582840.index
+1372034770.index
 178371103.index
 2750021430.index
 1164919735.index
@@ -36,9 +36,9 @@ INDEX VERSION 1.131+C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - An
 2239208008.index
 4065392146.index
 3612822928.index
+3451907465.index
 1523548292.index
 487147686.index
-3451907465.index
 2248914283.index
 386167009.index
 3194689124.index
@@ -46,9 +46,9 @@ INDEX VERSION 1.131+C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - An
 2227611079.index
 77629769.index
 2439681339.index
-2262023259.index
 3919814910.index
 3731256864.index
+2262023259.index
 1146597450.index
 67319576.index
 1672070649.index
