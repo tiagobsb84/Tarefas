@@ -1,5 +1,6 @@
 package br.com.tiago.tarefa.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
@@ -7,13 +8,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
-public class Tarefa {
-
+@Table(name = "tarefas")
+public class Tarefa implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	private String titulo;
 	private String descricao;
 	private Date dataFinalizacao = new Date();
 	private Boolean finalizado = false;
@@ -21,8 +27,9 @@ public class Tarefa {
 	public Tarefa() {
 	}
 
-	public Tarefa(Integer id, String descricao, Date dataFinalizacao, Boolean finalizado) {
+	public Tarefa(Integer id, String titulo, String descricao, Date dataFinalizacao, Boolean finalizado) {
 		this.id = id;
+		this.titulo = titulo;
 		this.descricao = descricao;
 		this.dataFinalizacao = dataFinalizacao;
 		this.finalizado = finalizado;
@@ -34,6 +41,14 @@ public class Tarefa {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public String getDescricao() {

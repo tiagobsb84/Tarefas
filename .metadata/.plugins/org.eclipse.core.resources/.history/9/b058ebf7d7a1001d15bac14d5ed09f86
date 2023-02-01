@@ -1,0 +1,22 @@
+package br.com.tiago.tarefa.service;
+
+import java.text.SimpleDateFormat;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.tiago.tarefa.model.Tarefa;
+import br.com.tiago.tarefa.repository.TarefaRepository;
+
+@Service
+public class DBService {
+
+	@Autowired
+	private TarefaRepository tarefaRepository;
+	
+	public void instanciaBancoDados() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		
+	}
+}
