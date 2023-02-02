@@ -1,0 +1,5 @@
+package br.com.tiago.tarefa.model;
+
+public class StandardError {
+
+}

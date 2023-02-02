@@ -1,0 +1,18 @@
+package br.com.tiago.tarefa.service.exception;
+
+public class ObjetoNaoEncontradoException extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+
+	public ObjetoNaoEncontradoException(String message, Integer id) {
+		super(message, id);
+		
+	}
+
+	public ObjetoNaoEncontradoException(String message) {
+		super(message);
+		
+	}
+
+	
+}

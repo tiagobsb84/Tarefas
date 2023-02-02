@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +23,9 @@ public class Tarefa implements Serializable {
 	private Integer id;
 	private String titulo;
 	private String descricao;
-	private Date dataFinalizacao = new Date();
+	
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	private Date dataFinalizacao;
 	private Boolean finalizado = false;
 
 	public Tarefa() {

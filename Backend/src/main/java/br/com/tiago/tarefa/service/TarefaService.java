@@ -3,6 +3,7 @@ package br.com.tiago.tarefa.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.hibernate.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,8 +22,8 @@ public class TarefaService {
 	}
 
 	public Tarefa buscarPorId(Integer id) {
-		Optional<Tarefa> findById = this.tarefaRepository.findById(id);
-		return findById.orElse(null);
+		Optional<Tarefa> obj = tarefaRepository.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! id: " + id + ", Tipo: " + Tarefa.class.getName(), id));
 	}
 
 	public List<Tarefa> buscarTodosClosed() {
