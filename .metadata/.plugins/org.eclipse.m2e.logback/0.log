@@ -214,3 +214,4 @@
 2023-02-02 00:36:20,733 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources
 2023-02-02 00:37:30,332 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources
 2023-02-02 00:37:30,342 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-02 00:37:30,346 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Thiago\Desktop\projeto\Tarefas com Spring Boot - Angular\Backend\src\test\resources

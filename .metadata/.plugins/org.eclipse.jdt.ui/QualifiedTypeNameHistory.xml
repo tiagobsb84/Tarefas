@@ -29,17 +29,18 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="br.com.tiago.tarefa.service.exception.ObjetoNaoEncontrado"/>
+    <fullyQualifiedTypeName name="br.com.tiago.tarefa.service.exception.ObjetoNaoEncontradoException"/>
+    <fullyQualifiedTypeName name="br.com.tiago.tarefa.service.exception.ObjectNotFoundException"/>
+    <fullyQualifiedTypeName name="br.com.tiago.tarefa.model.StandardError"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="br.com.tiago.tarefa.model.Tarefa"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+    <fullyQualifiedTypeName name="org.hibernate.ObjectNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="jakarta.servlet.ServletRequest"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
-    <fullyQualifiedTypeName name="br.com.tiago.tarefa.service.exception.ObjetoNaoEncontradoException"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
-    <fullyQualifiedTypeName name="br.com.tiago.tarefa.service.exception.ObjectNotFoundException"/>
-    <fullyQualifiedTypeName name="br.com.tiago.tarefa.model.Tarefa"/>
-    <fullyQualifiedTypeName name="org.hibernate.ObjectNotFoundException"/>
-    <fullyQualifiedTypeName name="br.com.tiago.tarefa.model.StandardError"/>
 </qualifiedTypeNameHistroy>
