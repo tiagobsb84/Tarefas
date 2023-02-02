@@ -1,0 +1,19 @@
+.header {
+    height: 10%;
+    background-color: #e3e3e3;
+    justify-content: center;
+}
+
+.imagem-logo {
+    height: 3rem;
+}
+
+.titulo-logo {
+    font-family: 'Pacifico', cursive;
+    padding-left: 1.2rem;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
