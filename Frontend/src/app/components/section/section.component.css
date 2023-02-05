@@ -1,0 +1,53 @@
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    color: white;
+}
+
+.tarefa-finalizada {
+    width: 100%;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.tarefa-finalizada:hover {
+    background-color: rgb(236, 230, 231);
+}
+
+.nova-tarefa {
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.nova-tarefa:hover {
+    background-color: rgb(217, 214, 233);
+}
+
+mat-card {
+    margin-top: .8rem;
+    padding: .8rem;
+}
+
+.conteudo-data {
+    text-align: end;
+    font-weight: 600;
+    color: rgb(219, 217, 236);
+    margin-bottom: 0;
+}
+
+.actions {
+    text-align: end;
+}
+
+.actions button {
+    margin: .5rem;
+}
+
+.actions button:hover {
+    opacity: .5;
+}
