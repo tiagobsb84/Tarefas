@@ -12,16 +12,27 @@ export class SectionComponent implements OnInit {
 
   list: Tarefa [] = [];
 
+  listaFinalizado: Tarefa[] = [];
+
+  count = 0;
+
   constructor(private service: TarefaService) {}
 
   ngOnInit(): void {
     this.findAll();
-    console.log(this.findAll)
   }
 
   findAll(): void {
     this.service.findAll().subscribe((resposta) => {
-      this.list = resposta;
-    })
+      resposta.forEach(tarefa => {
+        if(tarefa.finalizado) {
+          this.listaFinalizado.push(tarefa);
+        } else {
+          this.list.push(tarefa);
+        }
+        this.count = this.listaFinalizado.length;
+      })
+    })   
   }
+
 }

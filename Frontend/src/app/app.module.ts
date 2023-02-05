@@ -14,6 +14,7 @@ import { SectionComponent } from './components/section/section.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardHeader, MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
