@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Observable } from 'rxjs';
 import { Tarefa } from '../models/Tarefa';
@@ -12,7 +13,7 @@ export class TarefaService {
 
   baseUrl = 'http://localhost:8080/tarefa'
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private snack: MatSnackBar) { }
 
   findAll(): Observable<Tarefa[]> {
     return this.http.get<Tarefa[]>(this.baseUrl);
@@ -22,4 +23,13 @@ export class TarefaService {
     const url = `${this.baseUrl}/${id}`;
     return this.http.delete<void>(url);
   }
+
+  message(msg: String): void {
+    this.snack.open(`${msg}`, `OK`, {
+      horizontalPosition: 'end',
+      verticalPosition: 'top',
+      duration: 4000
+    })
+  }
+
 }

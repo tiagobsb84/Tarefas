@@ -11,7 +11,7 @@ import { TarefaService } from 'src/app/service/tarefa.service';
 })
 export class SectionComponent implements OnInit {
 
-  list: Tarefa [] = [];
+  list: Tarefa[] = [];
 
   listaFinalizado: Tarefa[] = [];
 
@@ -39,6 +39,7 @@ export class SectionComponent implements OnInit {
   delete(id: any): void {
     this.service.delete(id).subscribe((resposta) => {
       if(resposta === null) {
+        this.service.message('Deletado com sucesso');
         this.list = this.list.filter(tarefa => tarefa.id !== id);
       }
     })
