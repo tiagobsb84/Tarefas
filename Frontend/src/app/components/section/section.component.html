@@ -1,6 +1,6 @@
 <div class="container">
     <div >
-        <button matBadge="{{ count}}" class="tarefa-finalizada mat-elevation-z8" mat-stroked-button color="warn">TAREFAS FINALIZADAS</button>
+        <button (click)="navegandoParaFinalizados()" matBadge="{{ count}}" class="tarefa-finalizada mat-elevation-z8" mat-stroked-button color="warn">TAREFAS FINALIZADAS</button>
     </div>
     <div>
         <button class="nova-tarefa mat-elevation-z8" mat-stroked-button color="accent">NOVA TAREFA</button>
@@ -21,7 +21,7 @@
                 <button mat-mini-fab color="accent">
                     <mat-icon>edit</mat-icon>
                 </button>
-                <button mat-mini-fab color="warn">
+                <button (click)="delete(item.id)" mat-mini-fab color="warn">
                     <mat-icon>delete</mat-icon>
                 </button>
             </div>

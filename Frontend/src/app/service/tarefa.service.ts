@@ -17,4 +17,9 @@ export class TarefaService {
   findAll(): Observable<Tarefa[]> {
     return this.http.get<Tarefa[]>(this.baseUrl);
   }
+
+  delete(id: any): Observable<void> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<void>(url);
+  }
 }

@@ -1,0 +1,43 @@
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: 'Pacifico', cursive;
+    margin-top: 1rem;
+    color: rgb(97, 93, 93);
+}
+
+.content {
+    width: 100%;
+}
+
+.nova-tarefa {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #105e66;
+}
+
+.nova-tarefa:hover {
+    opacity: .8;
+}
+
+.conteudo-data {
+    text-align: end;
+    font-weight: 600;
+    color: whitesmoke;
+    padding-bottom: 0;
+}
+
+mat-card {
+    margin-top: .8rem;
+    padding: .2rem;
+}
+
+.conteudo-titulo, .conteudo-descricao {
+    color: aliceblue;
+}

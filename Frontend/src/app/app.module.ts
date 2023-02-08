@@ -15,13 +15,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardHeader, MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
+import { FinalizadosComponent } from './components/finalizados/finalizados.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SectionComponent
+    SectionComponent,
+    FinalizadosComponent
   ],
   imports: [
     BrowserModule,

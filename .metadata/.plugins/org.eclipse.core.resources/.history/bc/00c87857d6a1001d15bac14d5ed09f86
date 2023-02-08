@@ -1,5 +1,0 @@
-package br.com.tiago.tarefa.repository;
-
-public interface TarefaRepository {
-
-}

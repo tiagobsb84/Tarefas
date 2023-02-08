@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Tarefa } from 'src/app/models/Tarefa';
 
 import { TarefaService } from 'src/app/service/tarefa.service';
@@ -16,7 +17,7 @@ export class SectionComponent implements OnInit {
 
   count = 0;
 
-  constructor(private service: TarefaService) {}
+  constructor(private service: TarefaService, private router: Router) {}
 
   ngOnInit(): void {
     this.findAll();
@@ -35,4 +36,15 @@ export class SectionComponent implements OnInit {
     })   
   }
 
+  delete(id: any): void {
+    this.service.delete(id).subscribe((resposta) => {
+      if(resposta === null) {
+        this.list = this.list.filter(tarefa => tarefa.id !== id);
+      }
+    })
+  }
+
+  navegandoParaFinalizados(): void {
+    this.router.navigate(['finalizados'])
+  }
 }
