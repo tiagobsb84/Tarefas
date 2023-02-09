@@ -32,4 +32,8 @@ export class TarefaService {
     })
   }
 
+  finalizarTarefa(tarefa: Tarefa): Observable<Tarefa> {
+    const url = `${this.baseUrl}/${tarefa.id}`;
+    return this.http.put<Tarefa>(url, tarefa);
+  }
 }

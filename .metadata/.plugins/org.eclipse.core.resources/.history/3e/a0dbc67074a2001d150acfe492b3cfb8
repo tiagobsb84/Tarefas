@@ -1,5 +1,0 @@
-package br.com.tiago.tarefa.service.exception;
-
-public class ObjetoNaoEncontrado {
-
-}

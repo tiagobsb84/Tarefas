@@ -48,4 +48,19 @@ export class SectionComponent implements OnInit {
   navegandoParaFinalizados(): void {
     this.router.navigate(['finalizados'])
   }
+
+  navegandoParaUpdate(): void {
+    this.router.navigate(['update'])
+  }
+
+  finalizarTarefa(tarefa: Tarefa): void {
+    tarefa.finalizado = true;
+    this.service.finalizarTarefa(tarefa).subscribe((resposta) => {
+      if(resposta) {
+        this.service.message('Finalizado com Sucesso');
+        this.list = this.list.filter(item => tarefa.id !== item.id);
+        this.count++;
+      }
+    })
+  }
 }

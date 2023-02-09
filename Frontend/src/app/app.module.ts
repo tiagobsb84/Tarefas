@@ -17,6 +17,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import { FinalizadosComponent } from './components/finalizados/finalizados.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { UpdateComponent } from './components/update/update.component';
+
+import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     HeaderComponent,
     FooterComponent,
     SectionComponent,
-    FinalizadosComponent
+    FinalizadosComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatIconModule,
     HttpClientModule,
     MatBadgeModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
