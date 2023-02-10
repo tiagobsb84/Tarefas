@@ -3,7 +3,7 @@
         <button (click)="navegandoParaFinalizados()" matBadge="{{ count}}" class="tarefa-finalizada mat-elevation-z8" mat-stroked-button color="warn">TAREFAS FINALIZADAS</button>
     </div>
     <div>
-        <button class="nova-tarefa mat-elevation-z8" mat-stroked-button color="accent">NOVA TAREFA</button>
+        <button routerLink="create" class="nova-tarefa mat-elevation-z8" mat-stroked-button color="accent">NOVA TAREFA</button>
     </div>
 
     <div class="content" *ngFor="let item of list">

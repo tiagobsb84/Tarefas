@@ -1,0 +1,52 @@
+form {
+    width: 70%;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+
+.data-finalizar {
+text-align: start;
+}
+
+h1 {
+font-size: 2rem;
+font-weight: 600;
+margin-bottom: 3rem;
+color: rgb(104, 100, 100);
+}
+
+.form {
+width: 100%;
+}
+
+.buttons {
+width: 100%;
+text-align: start;
+}
+
+button {
+    margin-right: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+.salvar {
+    background-color: rgb(213, 217, 230);
+    font-weight: bold;
+}
+
+.salvar:hover {
+    background-color: rgb(85, 105, 168);
+    color: aliceblue;
+}
+
+.cancelar {
+    background-color: rgb(201, 161, 161);
+    font-weight: bold;
+}
+
+.cancelar:hover {
+    background-color: rgb(240, 46, 46);
+    color: aliceblue;
+}

@@ -1,0 +1,29 @@
+<form>
+    <h1>CRIANDO NOVA TAREFA</h1>
+
+    <mat-form-field class="data-finalizar" appearance="fill">
+      <mat-label>DATA PARA FINALIZAR</mat-label>
+      <input [(ngModel)]="tarefa.dataFinalizacao" name="tarefa.dataFinalizacao" matInput [matDatepicker]="dp3" disabled>
+      <mat-datepicker-toggle matIconSuffix [for]="dp3"></mat-datepicker-toggle>
+      <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+    </mat-form-field>
+
+    <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Título</mat-label>
+            <input [(ngModel)]="tarefa.titulo" name="tarefa.titulo" matInput placeholder="Ex. Estudar Spring">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Descrição</mat-label>
+            <input [(ngModel)]="tarefa.descricao" name="tarefa.descricao" matInput placeholder="Ex. Muito Bom">
+        </mat-form-field>
+    </div>
+
+    <div class="buttons">
+        <button (click)="create()" class="salvar" mat-stroked-button color="primary">CRIAR</button>
+        <button (click)="cancel()" class="cancelar" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+
+</form>
+

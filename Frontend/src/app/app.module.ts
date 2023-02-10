@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
+import { CreateComponent } from './components/create/create.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatInputModule} from '@angular/material/input';
     FooterComponent,
     SectionComponent,
     FinalizadosComponent,
-    UpdateComponent
+    UpdateComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import {MatInputModule} from '@angular/material/input';
     MatSnackBarModule,
     FormsModule,
     MatDatepickerModule,
-    MatInputModule
+    MatInputModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
