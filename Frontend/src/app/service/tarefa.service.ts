@@ -11,7 +11,7 @@ import { Tarefa } from '../models/Tarefa';
 
 export class TarefaService {
 
-  baseUrl = 'http://localhost:8080/tarefa'
+  baseUrl = 'http://localhost:8080/tarefa';
 
   constructor(private http: HttpClient, private snack: MatSnackBar) { }
 
@@ -39,5 +39,10 @@ export class TarefaService {
 
   create(tarefa: Tarefa): Observable<Tarefa> {
     return this.http.post<Tarefa>(this.baseUrl, tarefa);
+  }
+
+  findById(id: any): Observable<Tarefa> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Tarefa>(url);
   }
 }
